@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Register</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./style/all.min.css" />
+    <link rel="stylesheet" href="./style/bootstrap.css" />
+    <link rel="stylesheet" href="./style/register.css" />
+  </head>
+
+  <body>
+    <section>
+      <!-- Logo -->
+      <div class="container text-start my-3">
+        <h1>NETFLIX</h1>
+      </div>
+
+      <!-- Form Container -->
+      <div class="min-vh-100 d-flex justify-content-center align-items-center">
+        <div
+          class="Parent col-12 col-md-6 col-lg-4 bg-opacity-75 text-white p-5 rounded shadow"
+        >
+          <h4 class="mb-3">Register</h4>
+
+          <!-- Form -->
+          <form id="registerForm" novalidate>
+            <!-- First Name -->
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                placeholder="First Name"
+                required
+                id="fName"
+              />
+              <div class="invalid-feedback">
+                Please enter your first name (start with capital).
+              </div>
+            </div>
+
+            <!-- Last Name -->
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                placeholder="Last Name"
+                required
+                id="lName"
+              />
+              <div class="invalid-feedback">
+                Please enter your last name (start with capital).
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control form-control-lg"
+                placeholder="Email or mobile number"
+                required
+                id="email"
+              />
+              <div class="invalid-feedback">
+                Please enter a valid email or mobile number.
+              </div>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+              <input
+                type="password"
+                class="form-control form-control-lg"
+                placeholder="Password"
+                required
+                pattern=".{4,60}"
+                id="password"
+              />
+              <div class="invalid-feedback">
+                Password must be between 4 and 60 characters.
+              </div>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="sign-in btn w-100 mb-3" id="create">
+              Create An Account
+            </button>
+
+            <!-- Remember -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div>
+                <input type="checkbox" id="check" />
+                <label for="check">Remember me</label>
+              </div>
+            </div>
+
+            <!-- Login -->
+            <button type="button" class="login btn w-100" id="loginBtn">
+              Log in
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./script/register.js"></script>
+  </body>
+</html>

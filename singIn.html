@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Sign-In</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="img/netflix-icon.webp"
+      type="image/favicon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/bootstrap.css" />
+    <link rel="stylesheet" href="style/sign-in.css" />
+  </head>
+  <body>
+    <section>
+      <!-- Logo -->
+      <header class="container text-start my-3">
+        <h1>NETFLIX</h1>
+      </header>
+
+      <!-- Sign-In Form Container -->
+      <div class="min-vh-100 d-flex justify-content-center align-items-center">
+        <div
+          class="Parent col-12 col-md-6 col-lg-4 bg-opacity-75 text-white p-5 rounded shadow"
+        >
+          <!-- Form Title -->
+          <h4 class="mb-3">Sign In</h4>
+
+          <form class="needs-validation" id="form" novalidate>
+            <!-- Email / Mobile -->
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                placeholder="Email or Mobile"
+                id="email"
+              />
+              <div class="invalid-feedback" id="emailError">
+                Please enter a valid email or mobile number
+              </div>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+              <input
+                type="password"
+                class="form-control form-control-lg"
+                placeholder="Password"
+                id="password"
+              />
+              <div class="invalid-feedback" id="passwordError">
+                (x) Your password must contain between 4 and 60 characters.
+              </div>
+            </div>
+
+            <!-- Sign In Button -->
+            <button type="submit" class="sign-in btn w-100" id="sign-in">
+              Sign In
+            </button>
+
+            <!-- OR Separator -->
+            <h5 class="text-center mt-3">OR</h5>
+
+            <!-- Register Button -->
+            <button type="button" class="btn w-100 mt-2" id="register">
+              Register
+            </button>
+
+            <!-- Remember Me & Forget Password -->
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <div>
+                <input type="checkbox" id="check" />
+                <label for="check">Remember me</label>
+              </div>
+              <a class="password" href="#">Forget password?</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom JS -->
+    <script src="script/signin.JS"></script>
+  </body>
+</html>
